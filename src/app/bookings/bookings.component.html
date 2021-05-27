@@ -1,0 +1,28 @@
+<body>
+<div class="header">
+  <a href=""><img src="../../assets/Logo.png"></a>
+  <div class="header-right">
+    <a href="/register">Registration</a>
+    <a href="/about">About</a>
+    <a href="/auditoriums">Auditoriums</a>
+    <a href="/bookings">Reservations</a>
+    <a href="/booking">Make a reservation</a>
+  </div>
+</div>
+
+
+<div *ngFor="let booking of bookings">
+  <div class="column">
+    <div class="card">
+      <h3>Auditorium#{{booking['auditorium_id']}}</h3>
+      <h3>User#{{booking['user_id']}}</h3>
+      <img src="../../assets/1.png">
+      <p>{{booking['booking_date_start']}}</p>
+      <p>{{booking['booking_date_final']}}</p>
+    </div>
+  </div>
+</div>
+
+
+</body>
+

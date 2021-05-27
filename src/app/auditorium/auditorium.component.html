@@ -1,0 +1,33 @@
+<body>
+<div class="header">
+  <a href=""><img src="../../assets/Logo.png"></a>
+  <div class="header-right">
+    <a href="/register">Registration</a>
+    <a href="/about">About</a>
+    <a href="/auditoriums">Auditoriums</a>
+    <a href="/bookings">Reservations</a>
+    <a href="/booking">Make a reservation</a>
+  </div>
+</div>
+    <div class="container">
+        <div class="container3">
+
+            <form (submit)="createauditorium(name, description)" class="form2">
+                <h1>Create auditorium</h1>
+                <label class="m">Auditorium name:</label>
+                <input type="text" name="name" placeholder="Name" id="name" #name/>
+                <label class="m">Description:</label>
+                <input type="text" id="funds" name="Description" placeholder="300" #description/>
+
+                <div class="mt-30">
+                    <button type="submit" class="btn2">
+                                        Create
+                    </button>
+                    <button type="button"  onclick="location.href = '/auditoriums'" class="btn2">
+                                        Cancel
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>

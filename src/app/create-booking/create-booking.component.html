@@ -1,0 +1,37 @@
+<body>
+<div class="header">
+  <a href=""><img src="../../assets/Logo.png"></a>
+  <div class="header-right">
+    <a href="/register">Registration</a>
+    <a href="/about">About</a>
+    <a href="/auditoriums">Auditoriums</a>
+    <a href="/bookings">Reservations</a>
+    <a href="/booking">Make a reservation</a>
+  </div>
+</div>
+    <section class="container">
+        <div class="container3">
+
+            <form (submit)="createTransaction(User_id, Auditorium_id, Booking_date_start, Booking_date_final)" class="form2">
+                <h1>Create reserving</h1>
+                <label class="m">Enter your id:</label>
+                <input type="number" placeholder="Your id" #User_id/>
+                <label class="m">Enter auditorium id:</label>
+                <input type="number" name="funds" placeholder="Auditorium id" #Auditorium_id/>
+                <label class="m">Start date:</label>
+                <input type="text" name="funds" placeholder="Start date" #Booking_date_start/>
+                <label class="m">Final date:</label>
+                <input type="text" name="funds" placeholder="Final date" #Booking_date_final/>
+
+                <div class="mt-30">
+                    <button type="submit" class="btn2">
+                        Submit
+                    </button>
+                    <button type="button"  onclick="location.href='/auditoriums'" class="btn2">
+                        Cancel
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>

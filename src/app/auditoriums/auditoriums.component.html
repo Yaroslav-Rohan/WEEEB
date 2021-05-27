@@ -1,0 +1,32 @@
+<body>
+
+<div class="header">
+  <a href=""><img src="../../assets/Logo.png"></a>
+  <div class="header-right">
+    <a href="/register">Registration</a>
+    <a href="/about">About</a>
+    <a href="/auditoriums">Auditoriums</a>
+    <a href="/bookings">Reservations</a>
+    <a href="/booking">Make a reservation</a>
+  </div>
+</div>
+
+<div class="centered">
+  <a class="btn2" href="/auditorium">Create auditorium</a>
+</div>
+
+
+
+        <div *ngFor="let auditorium of auditoriums">
+          <div class="column">
+            <div class="card">
+              <h3>{{auditorium['name']}}</h3>
+              <img src="../../assets/1.png">
+              <p>{{auditorium['description']}}</p>
+              <a class="btn" href="/booking">Make reservation</a>
+            </div>
+          </div>
+        </div>
+
+
+</body>
